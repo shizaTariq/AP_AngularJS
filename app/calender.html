@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calendarDemoApp" id="top">
+<head>
+    <title>AngularUI Calendar for AngularJS</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="http://angular-ui.github.io/ui-calendar/bower_components/bootstrap-css/css/bootstrap.css" />
+    <link rel="stylesheet" href="http://angular-ui.github.io/ui-calendar/bower_components/fullcalendar/dist/fullcalendar.css">
+    <link rel="stylesheet" href="http://angular-ui.github.io/ui-calendar/demo/calendarDemo.css" />
+
+    <script src="http://angular-ui.github.io/ui-calendar/bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="http://angular-ui.github.io/ui-calendar/bower_components/angular/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.9.0.js"></script>
+    <script src="http://angular-ui.github.io/ui-calendar/bower_components/moment/moment.js"></script>
+    <script src="http://angular-ui.github.io/ui-calendar/bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="http://angular-ui.github.io/ui-calendar/bower_components/fullcalendar/dist/gcal.js"></script>
+    <script src="http://angular-ui.github.io/ui-calendar/src/calendar.js"></script>
+    <script src="http://angular-ui.github.io/ui-calendar/demo/calendarDemo.js"></script>
+
+	<style>
+	.fc-event.fc-draggable {display:none}
+	</style>
+</head>
+<body data-spy="scroll">
+
+<div role="main">
+    <div class="container">
+        <section id="directives-calendar" ng-controller="CalendarCtrl">
+            <div class="page-header">
+                <h1>Angular-UI-Calendar</h1>
+            </div>
+            <div class="well">
+                <div class="row-fluid">
+
+
+                    <div class="span12">
+
+                            <div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+</div>
+    </body>
+</html>
